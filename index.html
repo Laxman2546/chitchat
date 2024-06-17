@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChitChat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="form signup">
+      <header>ChitChat</header>
+      <form action="signup_handler.php" method="post" enctype="multipart/form-data">
+        <div class="error-txt" style="display: none;">This is an error message</div>
+        <div class="namedetails">
+          <div class="field input">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+          </div>
+          <div class="field input">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Last name" >
+          </div>
+        </div>
+        <div class="field input">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required title="Please enter a valid email address." autocomplete="username">
+        </div>
+        <div class="field input">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <i class="fa fa-eye" onclick="togglePasswordVisibility()"></i>
+        </div>
+        <div class="field image">
+          <label for="image">Select Image</label>
+          <input type="file" id="image" name="image" required>
+        </div>
+        <div class="field button">
+          <input type="submit"name="submit" value="Let's Chat">
+        </div>
+        <div class="link">
+          Already have an account? <a href="login.php">Login</a>
+        </div>
+      </form>
+    </section>
+  </div>
+  <script src="javascript/pass-show-hide.js"></script>
+  <script src="javascript/signup.js"></script>
+</body>
+
+</html>
