@@ -1,4 +1,4 @@
-
+to check live website: https://chitchat.c1.is/
 Chit Chat 
 Overview
 Chit Chat  is a simple, real-time chat application built using PHP, JavaScript, HTML, and CSS. It allows users to send and receive messages instantly in a chat room, making it ideal for quick and easy communication. This readme will guide you through the setup, usage, and customization of the application.
